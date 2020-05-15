@@ -1,7 +1,7 @@
 package servicebase.exception;
 
-import com.msr.commonutils.ExceptionUtil;
-import com.msr.commonutils.R;
+import com.msr.common.msrUtil.ExceptionUtil;
+import com.msr.common.msrUtil.R;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
