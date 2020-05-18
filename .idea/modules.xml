@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/msrhotel/common-base/common-base.iml" filepath="$PROJECT_DIR$/msrhotel/common-base/common-base.iml" />
       <module fileurl="file://$PROJECT_DIR$/msrhotel/hotel-common/hotel-common.iml" filepath="$PROJECT_DIR$/msrhotel/hotel-common/hotel-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/msrhotel/msrhotel.iml" filepath="$PROJECT_DIR$/msrhotel/msrhotel.iml" />
       <module fileurl="file://$PROJECT_DIR$/msrhotel/renren-fast/renren-fast.iml" filepath="$PROJECT_DIR$/msrhotel/renren-fast/renren-fast.iml" />
+      <module fileurl="file://$PROJECT_DIR$/msrhotel/service-account/service-account.iml" filepath="$PROJECT_DIR$/msrhotel/service-account/service-account.iml" />
+      <module fileurl="file://$PROJECT_DIR$/msrhotel/service-room/service-room.iml" filepath="$PROJECT_DIR$/msrhotel/service-room/service-room.iml" />
     </modules>
   </component>
 </project>

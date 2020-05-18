@@ -8,6 +8,8 @@
         <module>renren-fast</module>
         <module>common-base</module>
         <module>service-room</module>
+        <module>service-account</module>
+        <module>service-customer</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
