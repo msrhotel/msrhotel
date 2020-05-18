@@ -8,6 +8,8 @@
 
 package io.renren.modules.oss.cloud;
 
+
+
 import com.qiniu.common.Zone;
 import com.qiniu.http.Response;
 import com.qiniu.storage.Configuration;
