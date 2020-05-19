@@ -3,6 +3,10 @@ package com.msr.serviceaccount.mapper;
 import com.msr.serviceaccount.entity.HotelConsume;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Select;
+
+import java.sql.SQLOutput;
+import java.util.List;
 
 /**
  * <p>
@@ -14,5 +18,9 @@ import org.apache.ibatis.annotations.Mapper;
  */
 @Mapper
 public interface HotelConsumeMapper extends BaseMapper<HotelConsume> {
+
+//      //  根据用户ID账务信息
+//      @Select("select * from hotel_consume where customer_id = #{customerId}")
+//      public List<HotelConsume> getByCustomerId(String customerId);
 
 }
