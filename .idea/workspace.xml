@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:maven" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:maven" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:msrhotel" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:maven" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:msrhotel" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:renren-fast" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="bc3d33ea-4921-4210-8dd3-f73932ba5734" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_javax_activation_api_1_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/msrhotel/service-customerinfo/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/msrhotel/service-customerinfo/service-customerinfo.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/msrhotel/service-customerinfo/src/main/java/com/msr/servicecustomerinfo/CustomerinfoApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/msrhotel/service-customerinfo/src/main/java/com/msr/servicecustomerinfo/Query/customerinfoQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/msrhotel/service-customerinfo/src/main/java/com/msr/servicecustomerinfo/config/MyBatisPlusConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/msrhotel/service-customerinfo/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/msrhotel/service-customerinfo/src/main/resources/logback-spring.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/msrhotel/service-customerinfo/src/test/java/com/msr/hotelcustomerinfo/CodeGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msrhotel/hotel-common/hotel-common.iml" beforeDir="false" afterPath="$PROJECT_DIR$/msrhotel/hotel-common/hotel-common.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msrhotel/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/msrhotel/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msrhotel/renren-fast/renren-fast.iml" beforeDir="false" afterPath="$PROJECT_DIR$/msrhotel/renren-fast/renren-fast.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msrhotel/service-room/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/msrhotel/service-room/src/main/resources/application.properties" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1bvCUmJ2Z7H5LBWac8Ah7wCC7Zl" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../msr-master" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.msr.servicecustomerinfo" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\dongjihui\IdeaProjects\msrhotel\msrhotel\service-customerinfo\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.CustomerinfoApplication">
+    <configuration name="CodeGenerator (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="service-customerinfo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.msr.hotelcustomerinfo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.msr.hotelcustomerinfo" />
+      <option name="MAIN_CLASS_NAME" value="com.msr.hotelcustomerinfo.CodeGenerator" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CodeGenerator" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="service-customerinfo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.msr.customerinfo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.msr.customerinfo" />
+      <option name="MAIN_CLASS_NAME" value="com.msr.customerinfo.CodeGenerator" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CodeGenerator.main1 (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="service-customerinfo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.msr.hotel.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.msr.hotel" />
+      <option name="MAIN_CLASS_NAME" value="com.msr.hotel.CodeGenerator" />
+      <option name="METHOD_NAME" value="main1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CodeGenerator.main1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="service-customerinfo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.msr.customerinfo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.msr.customerinfo" />
+      <option name="MAIN_CLASS_NAME" value="com.msr.customerinfo.CodeGenerator" />
+      <option name="METHOD_NAME" value="main1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConsumeApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="service-account" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.msr.serviceaccount.ConsumeApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CustomerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="service-customer" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.msr.hotel.CustomerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CustomerinfoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="service-customerinfo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.msr.servicecustomerinfo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.msr.servicecustomerinfo.CustomerinfoApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RoomApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="service-room" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.msr.serviceroom.RoomApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServiceCustomerinfoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="service-customerinfo" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="service.servicecustomerinfo.ServiceCustomerinfoApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.CustomerinfoApplication" />
+        <item itemvalue="JUnit.CodeGenerator (1)" />
+        <item itemvalue="JUnit.CodeGenerator.main1 (1)" />
+        <item itemvalue="JUnit.CodeGenerator" />
+        <item itemvalue="JUnit.CodeGenerator.main1" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bc3d33ea-4921-4210-8dd3-f73932ba5734" name="Default Changelist" comment="" />
+      <created>1589503197687</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1589503197687</updated>
+      <workItem from="1589503199580" duration="5494000" />
+      <workItem from="1589525285817" duration="44278000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="173" y="0" key="#Project_Structure" timestamp="1589781243162">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="173" y="0" key="#Project_Structure/0.0.1366.728@0.0.1366.728" timestamp="1589781243162" />
+    <state x="488" y="69" key="#com.intellij.ide.util.MemberChooser" timestamp="1589872103721">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="488" y="69" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1589872103721" />
+    <state x="473" y="53" key="FileChooserDialogImpl" timestamp="1589852752740">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="473" y="53" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1589852752740" />
+    <state width="661" height="162" key="GridCell.Tab.0.bottom" timestamp="1589878451479">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="661" height="162" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1589878451479" />
+    <state width="661" height="162" key="GridCell.Tab.0.center" timestamp="1589878451479">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="661" height="162" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1589878451479" />
+    <state width="661" height="162" key="GridCell.Tab.0.left" timestamp="1589878451479">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="661" height="162" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1589878451479" />
+    <state width="661" height="162" key="GridCell.Tab.0.right" timestamp="1589878451479">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="661" height="162" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1589878451479" />
+    <state width="661" height="162" key="GridCell.Tab.1.bottom" timestamp="1589878451479">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="661" height="162" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1589878451479" />
+    <state width="661" height="162" key="GridCell.Tab.1.center" timestamp="1589878451479">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="661" height="162" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1589878451479" />
+    <state width="661" height="162" key="GridCell.Tab.1.left" timestamp="1589878451479">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="661" height="162" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1589878451479" />
+    <state width="661" height="162" key="GridCell.Tab.1.right" timestamp="1589878451479">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="661" height="162" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1589878451479" />
+    <state x="335" y="58" key="RollbackChangesDialog" timestamp="1589526544556">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="335" y="58" key="RollbackChangesDialog/0.0.1366.728@0.0.1366.728" timestamp="1589526544556" />
+    <state x="173" y="0" key="SettingsEditor" timestamp="1589795759104">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="173" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1589795759104" />
+    <state x="385" y="269" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589794038104">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="385" y="269" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1589794038104" />
+    <state x="402" y="143" key="git4idea.merge.GitPullDialog" timestamp="1589878435867">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="402" y="143" key="git4idea.merge.GitPullDialog/0.0.1366.728@0.0.1366.728" timestamp="1589878435867" />
+    <state x="486" y="256" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1589527727261">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="486" y="256" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1366.728@0.0.1366.728" timestamp="1589527727261" />
+    <state x="479" y="250" key="git4idea.ui.GitResetDialog" timestamp="1589525047134">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="479" y="250" key="git4idea.ui.GitResetDialog/0.0.1366.728@0.0.1366.728" timestamp="1589525047134" />
+    <state x="479" y="254" key="git4idea.ui.GitStashDialog" timestamp="1589790958926">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="479" y="254" key="git4idea.ui.GitStashDialog/0.0.1366.728@0.0.1366.728" timestamp="1589790958926" />
+    <state x="61" y="22" key="new project wizard" timestamp="1589794283386">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="61" y="22" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1589794283386" />
+    <state x="339" y="162" key="run.anything.popup" timestamp="1589846899541">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1589846899540" />
+  </component>
+</project>

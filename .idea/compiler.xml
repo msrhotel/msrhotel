@@ -10,7 +10,6 @@
         <module name="service-customer" />
         <module name="renren-fast" />
         <module name="service-account" />
-        <module name="service-order" />
         <module name="service-room" />
       </profile>
     </annotationProcessing>
