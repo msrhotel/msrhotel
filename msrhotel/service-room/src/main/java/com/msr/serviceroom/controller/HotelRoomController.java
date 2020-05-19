@@ -1,7 +1,9 @@
 package com.msr.serviceroom.controller;
 
 
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.msr.common.msrUtil.R;
+import com.msr.serviceroom.Query.RoomQuery;
 import com.msr.serviceroom.entity.HotelRoom;
 import com.msr.serviceroom.service.HotelRoomService;
 import com.msr.serviceroom.service.HotelRoomtypeService;
@@ -53,27 +55,26 @@ public class HotelRoomController {
         }
     }
 
-//    @ApiOperation(value = "分页讲师列表")
-//    @GetMapping("{page}/{limit}")
-//    public R pageQuery(
-//            @ApiParam(name = "page", value = "当前页码", required = true)
-//            @PathVariable Long page,
-//
-//            @ApiParam(name = "limit", value = "每页记录数", required = true)
-//            @PathVariable Long limit,
-//
-//            @ApiParam(name = "teacherQuery", value = "查询对象", required = false)
-//                    Query customerQuery){
-//
-//        Page<Customer> pageParam = new Page<>(page, limit);
-//
-//        customerService.pageQuery(pageParam, customerQuery);
-//        List<EduTeacher> records = pageParam.getRecords();
-//        long total = pageParam.getTotal();
-//
-//        return  R.ok().data("total", total).data("rows", records);
-//    }
+    @ApiOperation(value = "分页客房查询列表")
+    @GetMapping("{page}/{limit}")
+    public R pageQuery(
+            @ApiParam(name = "page", value = "当前页码", required = true)
+            @PathVariable Long page,
 
+            @ApiParam(name = "limit", value = "每页记录数", required = true)
+            @PathVariable Long limit,
+
+            @ApiParam(name = "roomQuery", value = "查询对象", required = false)
+                    RoomQuery roomQuery){
+
+        Page<HotelRoom> pageParam = new Page<>(page, limit);
+
+        hotelRoomService.pageQuery(pageParam, roomQuery);
+        List<HotelRoom> records = pageParam.getRecords();
+        long total = pageParam.getTotal();
+
+        return  R.ok().data("total", total).data("rows", records);
+    }
     @ApiOperation(value = "新增客房信息")
     @PostMapping("save")
     public R save(
