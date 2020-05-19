@@ -3,8 +3,8 @@ package com.msr.hotel.controller;
 
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.msr.common.msrUtil.R;
-import com.msr.common.utils.Query;
 import com.msr.hotel.entity.Customer;
+import com.msr.hotel.query.CustomerQuery;
 import com.msr.hotel.service.CustomerService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -40,7 +40,7 @@ public class CustomerController {
     @ApiOperation(value = "根据ID删除客人入住信息")
     @DeleteMapping("{id}")
     public R removeById(
-            @ApiParam(name = "id", value = "讲师ID", required = true)
+            @ApiParam(name = "id", value = "客户身份证id", required = true)
             @PathVariable String id){
         boolean result = customerService.removeById(id);
         if(result){
@@ -50,26 +50,26 @@ public class CustomerController {
         }
     }
 
-//    @ApiOperation(value = "分页讲师列表")
-//    @GetMapping("{page}/{limit}")
-//    public R pageQuery(
-//            @ApiParam(name = "page", value = "当前页码", required = true)
-//            @PathVariable Long page,
-//
-//            @ApiParam(name = "limit", value = "每页记录数", required = true)
-//            @PathVariable Long limit,
-//
-//            @ApiParam(name = "teacherQuery", value = "查询对象", required = false)
-//                    Query customerQuery){
-//
-//        Page<Customer> pageParam = new Page<>(page, limit);
-//
-//        customerService.pageQuery(pageParam, customerQuery);
-//        List<EduTeacher> records = pageParam.getRecords();
-//        long total = pageParam.getTotal();
-//
-//        return  R.ok().data("total", total).data("rows", records);
-//    }
+    @ApiOperation(value = "分页查询列表")
+    @GetMapping("{page}/{limit}")
+    public R pageQuery(
+            @ApiParam(name = "page", value = "当前页码", required = true)
+            @PathVariable Long page,
+
+            @ApiParam(name = "limit", value = "每页记录数", required = true)
+            @PathVariable Long limit,
+
+            @ApiParam(name = "CustomerQuery", value = "查询对象", required = false)
+                    CustomerQuery customerQuery){
+
+        Page<Customer> pageParam = new Page<>(page, limit);
+
+        customerService.pageQuery(pageParam, customerQuery);
+        List<Customer> records = pageParam.getRecords();
+        long total = pageParam.getTotal();
+
+        return  R.ok().data("total", total).data("rows", records);
+    }
 
     @ApiOperation(value = "新增客人入住信息")
     @PostMapping("save")
@@ -84,7 +84,7 @@ public class CustomerController {
     @ApiOperation(value = "根据ID查询客人入住信息")
     @GetMapping("{id}")
     public R getById(
-            @ApiParam(name = "id", value = "客户ID", required = true)
+            @ApiParam(name = "id", value = "客户身份证id", required = true)
             @PathVariable String id){
 
         Customer customer = customerService.getById(id);
