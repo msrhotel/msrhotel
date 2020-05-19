@@ -2,7 +2,7 @@ package com.msr.servicecustomerinfo.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.msr.servicecustomerinfo.Query.customerinfoQuery;
+import com.msr.servicecustomerinfo.Query.CustomerinfoQuery;
 import com.msr.servicecustomerinfo.entity.HotelCustomerinfo;
 import com.msr.servicecustomerinfo.mapper.HotelCustomerinfoMapper;
 import com.msr.servicecustomerinfo.service.HotelCustomerinfoService;
@@ -23,7 +23,7 @@ import java.io.Serializable;
 @Service
 public class HotelCustomerinfoServiceImpl extends ServiceImpl<HotelCustomerinfoMapper, HotelCustomerinfo> implements HotelCustomerinfoService {
     @Override
-    public void pageQuery(Page<HotelCustomerinfo> pageParam, customerinfoQuery customerinfoQuery) {
+   public void pageQuery(Page<HotelCustomerinfo> pageParam, CustomerinfoQuery customerinfoQuery) {
         QueryWrapper<HotelCustomerinfo> queryWrapper = new QueryWrapper<>();
         queryWrapper.orderByAsc("customer_id");
 
@@ -32,8 +32,8 @@ public class HotelCustomerinfoServiceImpl extends ServiceImpl<HotelCustomerinfoM
             return;
         }
 
-        String customerName = customerinfoQuery.getCustomername();
-        String customerinfoTel = customerinfoQuery.getCustomerinfotel();
+        String customerName = customerinfoQuery.getCustomerName();
+        String customerinfoTel = customerinfoQuery.getCustomerinfoTel();
         String customerinfoBirthday = customerinfoQuery.getCustomerinfoBirthday();
 
         if (!StringUtils.isEmpty(customerName)) {

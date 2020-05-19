@@ -7,10 +7,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="service-customer" />
-        <module name="renren-fast" />
-        <module name="service-account" />
+        <module name="service-staff" />
+        <module name="service-order" />
         <module name="service-room" />
+        <module name="renren-fast" />
+        <module name="service-customerinfo" />
+        <module name="service-customer" />
+        <module name="service-account" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -20,8 +23,10 @@
       <module name="renren-fast" target="1.8" />
       <module name="service-account" target="1.8" />
       <module name="service-customer" target="1.8" />
+      <module name="service-customerinfo" target="1.8" />
       <module name="service-order" target="1.8" />
       <module name="service-room" target="1.8" />
+      <module name="service-staff" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -30,8 +35,10 @@
       <module name="renren-fast" options="-parameters" />
       <module name="service-account" options="-parameters" />
       <module name="service-customer" options="-parameters" />
+      <module name="service-customerinfo" options="-parameters" />
       <module name="service-order" options="-parameters" />
       <module name="service-room" options="-parameters" />
+      <module name="service-staff" options="-parameters" />
     </option>
   </component>
 </project>
