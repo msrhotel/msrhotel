@@ -17,7 +17,6 @@ import java.util.List;
  * @since 2020-05-18
  */
 public interface HotelConsumeService extends IService<HotelConsume> {
-   public List<HotelConsume> getByCustomerId(String customerId);
 
     void pageQuery(Page<HotelConsume> pageParam, ConsumeQuery consumeQuery);
 

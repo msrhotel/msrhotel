@@ -19,8 +19,5 @@ import java.util.List;
 @Mapper
 public interface HotelConsumeMapper extends BaseMapper<HotelConsume> {
 
-//      //  根据用户ID账务信息
-//      @Select("select * from hotel_consume where customer_id = #{customerId}")
-//      public List<HotelConsume> getByCustomerId(String customerId);
 
 }
