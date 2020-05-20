@@ -50,39 +50,122 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bc3d33ea-4921-4210-8dd3-f73932ba5734" name="Default Changelist" comment="董">
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_javax_activation_api_1_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_3_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/msrhotel/service-customerinfo/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/msrhotel/service-customerinfo/service-customerinfo.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/msrhotel/service-customerinfo/src/main/java/com/msr/servicecustomerinfo/CustomerinfoApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/msrhotel/service-customerinfo/src/main/java/com/msr/servicecustomerinfo/Query/CustomerinfoQuery.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/msrhotel/service-customerinfo/src/main/java/com/msr/servicecustomerinfo/config/MyBatisPlusConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/msrhotel/service-customerinfo/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/msrhotel/service-customerinfo/src/main/resources/logback-spring.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_2020_5_19_17_57__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_2020_5_19_17_57__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_2020_5_19_17_57__Default_Changelist_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_2020_5_19_17_57__Default_Changelist_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020_5_18_18_27__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020_5_18_18_27__Default_Changelist_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msrhotel/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/msrhotel/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msrhotel/renren-fast/renren-fast.iml" beforeDir="false" afterPath="$PROJECT_DIR$/msrhotel/renren-fast/renren-fast.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msrhotel/service-customer/src/main/java/com/msr/hotel/query/CustomerinfoQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/msrhotel/service-customer/src/main/java/com/msr/hotel/query/CustomerinfoQuery.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msrhotel/service-customerinfo/src/main/java/com/msr/servicecustomerinfo/service/HotelCustomerinfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/msrhotel/service-customerinfo/src/main/java/com/msr/servicecustomerinfo/service/HotelCustomerinfoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msrhotel/service-customerinfo/src/main/java/com/msr/servicecustomerinfo/service/impl/HotelCustomerinfoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/msrhotel/service-customerinfo/src/main/java/com/msr/servicecustomerinfo/service/impl/HotelCustomerinfoServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msrhotel/service-customerinfo/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/msrhotel/service-customerinfo/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msrhotel/service-customerinfo/target/classes/com/msr/servicecustomerinfo/Query/customerinfoQuery.class" beforeDir="false" afterPath="$PROJECT_DIR$/msrhotel/service-customerinfo/target/classes/com/msr/servicecustomerinfo/Query/customerinfoQuery.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msrhotel/service-customerinfo/target/classes/com/msr/servicecustomerinfo/config/MyBatisPlusConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/msrhotel/service-customerinfo/target/classes/com/msr/servicecustomerinfo/config/MyBatisPlusConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msrhotel/service-customerinfo/target/classes/com/msr/servicecustomerinfo/service/HotelCustomerinfoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/msrhotel/service-customerinfo/target/classes/com/msr/servicecustomerinfo/service/HotelCustomerinfoService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msrhotel/service-customerinfo/target/classes/com/msr/servicecustomerinfo/service/impl/HotelCustomerinfoServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/msrhotel/service-customerinfo/target/classes/com/msr/servicecustomerinfo/service/impl/HotelCustomerinfoServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msrhotel/service-customerinfo/target/test-classes/META-INF/service-customerinfo.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/msrhotel/service-customerinfo/target/test-classes/com/msr/hotelcustomerinfo/CodeGenerator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/msrhotel/service-room/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/msrhotel/service-room/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msrhotel/service-order/service-order.iml" beforeDir="false" afterPath="$PROJECT_DIR$/msrhotel/service-order/service-order.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msrhotel/service-order/src/main/java/com/msr/serviceorder/controller/HotelCustomerinfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/msrhotel/service-order/src/main/java/com/msr/serviceorder/controller/HotelCustomerinfoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msrhotel/service-order/src/main/java/com/msr/serviceorder/controller/HotelOrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/msrhotel/service-order/src/main/java/com/msr/serviceorder/controller/HotelOrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msrhotel/service-order/src/main/java/com/msr/serviceorder/entity/HotelCustomerinfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/msrhotel/service-order/src/main/java/com/msr/serviceorder/entity/HotelCustomerinfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msrhotel/service-order/src/main/java/com/msr/serviceorder/entity/HotelOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/msrhotel/service-order/src/main/java/com/msr/serviceorder/entity/HotelOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msrhotel/service-order/src/main/java/com/msr/serviceorder/mapper/HotelCustomerinfoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/msrhotel/service-order/src/main/java/com/msr/serviceorder/mapper/HotelCustomerinfoMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msrhotel/service-order/src/main/java/com/msr/serviceorder/mapper/HotelOrderMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/msrhotel/service-order/src/main/java/com/msr/serviceorder/mapper/HotelOrderMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msrhotel/service-order/src/main/java/com/msr/serviceorder/mapper/xml/HotelCustomerinfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/msrhotel/service-order/src/main/java/com/msr/serviceorder/mapper/xml/HotelCustomerinfoMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msrhotel/service-order/src/main/java/com/msr/serviceorder/mapper/xml/HotelOrderMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/msrhotel/service-order/src/main/java/com/msr/serviceorder/mapper/xml/HotelOrderMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msrhotel/service-order/src/main/java/com/msr/serviceorder/service/HotelCustomerinfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/msrhotel/service-order/src/main/java/com/msr/serviceorder/service/HotelCustomerinfoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msrhotel/service-order/src/main/java/com/msr/serviceorder/service/HotelOrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/msrhotel/service-order/src/main/java/com/msr/serviceorder/service/HotelOrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msrhotel/service-order/src/main/java/com/msr/serviceorder/service/impl/HotelCustomerinfoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/msrhotel/service-order/src/main/java/com/msr/serviceorder/service/impl/HotelCustomerinfoServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msrhotel/service-order/src/main/java/com/msr/serviceorder/service/impl/HotelOrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/msrhotel/service-order/src/main/java/com/msr/serviceorder/service/impl/HotelOrderServiceImpl.java" afterDir="false" />
     </list>
+    <ignored path="D:\IDEA_Projects\msrhotel\.idea\shelf/" />
+    <ignored path="$PROJECT_DIR$/msrhotel/target/" />
+    <ignored path="$PROJECT_DIR$/msrhotel/common-base/target/" />
+    <ignored path="$PROJECT_DIR$/msrhotel/hotel-common/target/" />
+    <ignored path="$PROJECT_DIR$/msrhotel/service-customerinfo/target/" />
+    <ignored path="$PROJECT_DIR$/msrhotel/service-order/target/" />
+    <ignored path="$PROJECT_DIR$/msrhotel/service-account/target/" />
+    <ignored path="$PROJECT_DIR$/msrhotel/service-room/target/" />
+    <ignored path="$PROJECT_DIR$/msrhotel/renren-fast/target/" />
+    <ignored path="$PROJECT_DIR$/msrhotel/service-customer/target/" />
+    <ignored path="$PROJECT_DIR$/msrhotel/service-staff/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/msrhotel/service-customer/src/main/java/com/msr/hotel/controller/CustomerController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="309">
+              <caret line="34" column="20" lean-forward="true" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/msrhotel/service-order/src/main/java/com/msr/serviceorder/controller/HotelOrderController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="432">
+              <caret line="27" column="44" lean-forward="true" selection-start-line="27" selection-start-column="44" selection-end-line="27" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/msrhotel/service-order/src/main/java/com/msr/serviceorder/OrderApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/msrhotel/service-customer/src/main/java/com/msr/hotel/config/MyBatisPlusConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="648">
+              <caret line="32" column="37" lean-forward="true" selection-start-line="32" selection-start-column="37" selection-end-line="32" selection-end-column="37" />
+              <folding>
+                <element signature="e#1244#1245#0" expanded="true" />
+                <element signature="e#1289#1290#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/msrhotel/service-order/src/main/java/com/msr/serviceorder/config/MyBatisPlusConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="54">
+              <caret line="8" column="56" selection-start-line="8" selection-start-column="56" selection-end-line="8" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/msrhotel/service-order/src/main/java/com/msr/serviceorder/entity/HotelOrder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/msrhotel/service-order/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1620" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/msrhotel/service-order/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="513">
+              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -94,7 +177,93 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/msrhotel/service-order/src/main/java/com/msr/serviceorder/controller/HotelOrderController.java" />
+        <option value="$PROJECT_DIR$/msrhotel/service-order/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/msrhotel/service-order/src/main/java/com/msr/serviceorder/entity/HotelOrder.java" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1298" />
+    <option name="height" value="1408" />
+  </component>
   <component name="ProjectId" id="1bvCUmJ2Z7H5LBWac8Ah7wCC7Zl" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="service-order" type="b2602c69:ProjectViewProjectNode" />
+              <item name="msrhotel" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="service-order" type="b2602c69:ProjectViewProjectNode" />
+              <item name="msrhotel" type="462c0819:PsiDirectoryNode" />
+              <item name="service-order" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="service-order" type="b2602c69:ProjectViewProjectNode" />
+              <item name="msrhotel" type="462c0819:PsiDirectoryNode" />
+              <item name="service-order" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="service-order" type="b2602c69:ProjectViewProjectNode" />
+              <item name="msrhotel" type="462c0819:PsiDirectoryNode" />
+              <item name="service-order" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="service-order" type="b2602c69:ProjectViewProjectNode" />
+              <item name="msrhotel" type="462c0819:PsiDirectoryNode" />
+              <item name="service-order" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="service-order" type="b2602c69:ProjectViewProjectNode" />
+              <item name="msrhotel" type="462c0819:PsiDirectoryNode" />
+              <item name="service-order" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="serviceorder" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="service-order" type="b2602c69:ProjectViewProjectNode" />
+              <item name="msrhotel" type="462c0819:PsiDirectoryNode" />
+              <item name="service-order" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="serviceorder" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -126,7 +295,19 @@
       <recent name="C:\Users\dongjihui\IdeaProjects\msrhotel\msrhotel\service-customerinfo\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.CustomerinfoApplication">
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.RenrenApplication">
     <configuration name="CodeGenerator (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="service-customerinfo" />
       <extension name="coverage">
@@ -173,22 +354,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CodeGenerator.main1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="service-customerinfo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.msr.customerinfo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.msr.customerinfo" />
-      <option name="MAIN_CLASS_NAME" value="com.msr.customerinfo.CodeGenerator" />
-      <option name="METHOD_NAME" value="main1" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ConsumeApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="service-account" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.msr.serviceaccount.ConsumeApplication" />
@@ -212,6 +377,19 @@
         </pattern>
       </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.msr.servicecustomerinfo.CustomerinfoApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="service-order" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.msr.serviceorder.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.msr.serviceorder.OrderApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -246,11 +424,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.OrderApplication" />
         <item itemvalue="Spring Boot.CustomerinfoApplication" />
         <item itemvalue="JUnit.CodeGenerator (1)" />
         <item itemvalue="JUnit.CodeGenerator.main1 (1)" />
         <item itemvalue="JUnit.CodeGenerator" />
-        <item itemvalue="JUnit.CodeGenerator.main1" />
       </list>
     </recent_temporary>
   </component>
@@ -266,6 +444,8 @@
       <updated>1589503197687</updated>
       <workItem from="1589503199580" duration="5494000" />
       <workItem from="1589525285817" duration="47709000" />
+      <workItem from="1589939473839" duration="86000" />
+      <workItem from="1589939590109" duration="3209000" />
     </task>
     <task id="LOCAL-00001" summary="董">
       <created>1589878753350</created>
@@ -284,20 +464,83 @@
     <option name="localTasksCounter" value="3" />
     <servers />
   </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="3295000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1038" height="1126" extended-state="0" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28061223" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" weight="0.32954547" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32954547" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="ConsoleMavenPlugin" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.32954547" />
+      <window_info anchor="bottom" id="SonarLint" order="12" />
+      <window_info anchor="bottom" id="Java Enterprise" order="13" />
+      <window_info anchor="bottom" id="Database Changes" order="14" />
+      <window_info anchor="bottom" id="Version Control" order="15" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.32984033" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="9" />
+    </layout>
+  </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="董" />
@@ -396,5 +639,103 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1589846899540" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/msrhotel/service-customer/src/main/java/com/msr/hotel/controller/CustomerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="34" column="20" lean-forward="true" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/msrhotel/service-customerinfo/src/main/java/com/msr/servicecustomerinfo/controller/HotelCustomerinfoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1593">
+          <caret line="70" column="65" lean-forward="true" selection-start-line="70" selection-start-column="65" selection-end-line="70" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/msrhotel/service-order/src/main/java/com/msr/serviceorder/controller/HotelOrderController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="27" column="44" lean-forward="true" selection-start-line="27" selection-start-column="44" selection-end-line="27" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/msrhotel/service-order/src/main/java/com/msr/serviceorder/OrderApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/msrhotel/service-order/service-order.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2592" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/msrhotel/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-729" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/msrhotel/service-customer/src/main/java/com/msr/hotel/config/MyBatisPlusConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="32" column="37" lean-forward="true" selection-start-line="32" selection-start-column="37" selection-end-line="32" selection-end-column="37" />
+          <folding>
+            <element signature="e#1244#1245#0" expanded="true" />
+            <element signature="e#1289#1290#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/msrhotel/service-customer/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/msrhotel/service-order/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1620" />
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-context/5.1.9.RELEASE/spring-context-5.1.9.RELEASE.jar!/org/springframework/context/annotation/Configuration.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-context/5.1.9.RELEASE/spring-context-5.1.9.RELEASE.jar!/org/springframework/context/annotation/Bean.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/msrhotel/service-order/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/msrhotel/service-order/src/main/java/com/msr/serviceorder/config/MyBatisPlusConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="8" column="56" selection-start-line="8" selection-start-column="56" selection-end-line="8" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/msrhotel/service-order/src/main/java/com/msr/serviceorder/entity/HotelOrder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>
