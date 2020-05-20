@@ -25,11 +25,13 @@ public class MyBatisPlusConfig {
 
     @Bean
     public ISqlInjector sqlInjector() {
+
         return new LogicSqlInjector();
     }
 
     @Bean
     public PaginationInterceptor paginationInterceptor() {
+
         return new PaginationInterceptor();
     }
 }

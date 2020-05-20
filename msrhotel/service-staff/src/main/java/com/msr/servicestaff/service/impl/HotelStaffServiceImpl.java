@@ -31,7 +31,6 @@ public class HotelStaffServiceImpl extends ServiceImpl<HotelStaffMapper, HotelSt
     @Override
     public void pageQuery(Page<HotelStaff> pageParam, StaffQuery staffQuery) {
         QueryWrapper<HotelStaff> queryWrapper = new QueryWrapper<>();
-        queryWrapper.orderByAsc("sort");
 
         if (staffQuery == null){
             baseMapper.selectPage(pageParam, queryWrapper);
