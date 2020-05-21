@@ -8,7 +8,6 @@
       <module fileurl="file://$PROJECT_DIR$/msrhotel/renren-fast/renren-fast.iml" filepath="$PROJECT_DIR$/msrhotel/renren-fast/renren-fast.iml" />
       <module fileurl="file://$PROJECT_DIR$/msrhotel/service-account/service-account.iml" filepath="$PROJECT_DIR$/msrhotel/service-account/service-account.iml" />
       <module fileurl="file://$PROJECT_DIR$/msrhotel/service-customer/service-customer.iml" filepath="$PROJECT_DIR$/msrhotel/service-customer/service-customer.iml" />
-      <module fileurl="file://$PROJECT_DIR$/msrhotel/service-order/service-customer (1).iml" filepath="$PROJECT_DIR$/msrhotel/service-order/service-customer (1).iml" />
       <module fileurl="file://$PROJECT_DIR$/msrhotel/service-customerinfo/service-customerinfo.iml" filepath="$PROJECT_DIR$/msrhotel/service-customerinfo/service-customerinfo.iml" />
       <module fileurl="file://$PROJECT_DIR$/msrhotel/service-order/service-order.iml" filepath="$PROJECT_DIR$/msrhotel/service-order/service-order.iml" />
       <module fileurl="file://$PROJECT_DIR$/msrhotel/service-room/service-room.iml" filepath="$PROJECT_DIR$/msrhotel/service-room/service-room.iml" />
