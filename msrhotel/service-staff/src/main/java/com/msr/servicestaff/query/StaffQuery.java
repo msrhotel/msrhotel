@@ -6,13 +6,13 @@ import lombok.Data;
 
 import java.io.Serializable;
 
-@ApiModel(value = "Staff查询对象", description = "员工查询对象封装")
+@ApiModel(value = "员工查询对象", description = "员工查询对象封装")
 @Data
 public class StaffQuery implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    @ApiModelProperty(value = "员工名称,模糊查询")
+    @ApiModelProperty(value = "员工名称模糊查询")
     private String name;
 
     @ApiModelProperty(value = "员工所属部门 1.经理部 2.财务部 3.人事部 4.运营部 5.总务部")

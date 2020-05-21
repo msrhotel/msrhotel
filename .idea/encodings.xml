@@ -12,11 +12,13 @@
     <file url="file://$PROJECT_DIR$/msrhotel/service-account/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/msrhotel/service-customer" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/msrhotel/service-customer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/msrhotel/service-customerinfo" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/msrhotel/service-customerinfo/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/msrhotel/service-order" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/msrhotel/service-order/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/msrhotel/service-room" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/msrhotel/service-room/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/msrhotel/service-staff" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/msrhotel/service-staff/src/main/java" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>

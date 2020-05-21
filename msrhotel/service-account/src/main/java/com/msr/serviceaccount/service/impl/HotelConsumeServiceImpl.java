@@ -25,17 +25,11 @@ import java.util.List;
 @Service
 public class HotelConsumeServiceImpl extends ServiceImpl<HotelConsumeMapper, HotelConsume> implements HotelConsumeService {
 
-    private HotelConsumeMapper consumeMapper;
-    @Override
-    public List<HotelConsume> getByCustomerId(String customerId) {
-        return consumeMapper.getByCustomerId(customerId);
-    }
 
     @Override
     public void pageQuery(Page<HotelConsume> pageParam, ConsumeQuery consumeQuery) {
         QueryWrapper<HotelConsume> queryWrapper = new QueryWrapper<>();
         queryWrapper.orderByAsc();
-
 
         String customerId = consumeQuery.getCustomerId();
         Integer consumeTypeId = consumeQuery.getConsumeTypeId();

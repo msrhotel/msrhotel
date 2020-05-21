@@ -27,7 +27,7 @@ import java.util.List;
  * @since 2020-05-18
  */
 @CrossOrigin // 跨域
-@Api(description = "消费信息查询")
+@Api(description = "消费报表")
 @RestController
 @RequestMapping("/hotel/consume")
 public class HotelConsumeController {
@@ -35,7 +35,7 @@ public class HotelConsumeController {
     private HotelConsumeService consumeService;
 
     private HotelConsumeMapper consumeMapper;
-    @ApiOperation("所有消费信息")
+    @ApiOperation("所有消费报表信息")
     @GetMapping("findAll")
     public R list(){
         List<HotelConsume> list = consumeService.list(null);
@@ -48,17 +48,17 @@ public class HotelConsumeController {
 //        return R.ok().data("cutomers", list);
 //    }
 //
-    @ApiOperation(value = "新增账务信息")
+    @ApiOperation(value = "新增消费报表")
     @PostMapping("save")
     public R save(
-            @ApiParam(name = "consume", value = "账务信息对象", required = true)
+            @ApiParam(name = "consume", value = "消费报表对象", required = true)
             @RequestBody HotelConsume consume){
         System.out.println(consume);
         consumeService.save(consume);
         return R.ok();
     }
 
-    @ApiOperation(value = "根据账单ID删除收入账户信息")
+    @ApiOperation(value = "根据账单ID删除收入消费报表")
     @DeleteMapping("{id}")
     public R removeById(
             @ApiParam(name = "id", value = "账户ID", required = true)
@@ -67,7 +67,7 @@ public class HotelConsumeController {
         return R.ok();
     }
 
-    @ApiOperation(value = "根据账务ID修改账务信息")
+    @ApiOperation(value = "根据账务ID修改消费报表")
     @PutMapping("{id}")
     public R updateById(
             @ApiParam(name = "id", value = "账务ID", required = true)
@@ -81,7 +81,7 @@ public class HotelConsumeController {
         return R.ok();
     }
 
-    @ApiOperation(value = "根据账务ID查询账务信息")
+    @ApiOperation(value = "根据账务ID查询消费报表")
     @GetMapping("{id}")
     public R getById(
             @ApiParam(name = "id", value = "账务ID", required = true)
@@ -91,16 +91,7 @@ public class HotelConsumeController {
         return R.ok().data("items", consume);
     }
 
-//    @ApiOperation(value = "根据客户ID查询账务信息")
-//    @GetMapping("customerid/{customerId}")
-//    public R getByCustomerId(
-//            @ApiParam(name = "customerId", value = "客户ID", required = true)
-//            @PathVariable String customerId){
-//        List<HotelConsume> consume = consumeService.getByCustomerId(customerId);
-//        System.out.println(consume);
-//        return R.ok().data("item", consume);
-//    }
-    @ApiOperation(value = "根据客户ID查询账务信息")
+    @ApiOperation(value = "根据客户ID查询消费报表分页列表")
     @GetMapping("{page}/{limit}")
     public R getByCustomerId(
             @ApiParam(name = "page", value = "当前页码", required = true)
@@ -121,7 +112,7 @@ public class HotelConsumeController {
         return  R.ok().data("total", total).data("rows", records);
     }
 
-    @ApiOperation(value = "账务信息分页列表")
+    @ApiOperation(value = "消费报表分页列表")
     @GetMapping("page/{page}/{limit}")
     public R pageQuery(
             @ApiParam(name = "page", value = "当前页码", required = true)

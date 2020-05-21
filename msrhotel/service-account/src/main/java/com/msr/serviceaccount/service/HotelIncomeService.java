@@ -1,7 +1,10 @@
 package com.msr.serviceaccount.service;
 
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.msr.serviceaccount.entity.HotelIncome;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.msr.serviceaccount.query.IncomeCustomerIdQuery;
+import com.msr.serviceaccount.query.IncomeQuery;
 
 /**
  * <p>
@@ -13,4 +16,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface HotelIncomeService extends IService<HotelIncome> {
 
+    void getIncomeByCustomerId(Page<HotelIncome> pageParam, IncomeCustomerIdQuery incomeCustomerIdQuery);
+
+    void pageQuery(Page<HotelIncome> pageParam, IncomeQuery incomeQuery);
 }

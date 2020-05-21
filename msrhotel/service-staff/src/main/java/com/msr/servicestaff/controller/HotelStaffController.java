@@ -39,7 +39,7 @@ public class HotelStaffController {
 
     @ApiOperation(value = "根据ID删除员工信息")
     @DeleteMapping("{id}")
- public R removeByid(
+ public R removeById(
          @ApiParam(name="id",value="员工id",required = true)
          @PathVariable String id){
      boolean result =staffService.removeById(id);
