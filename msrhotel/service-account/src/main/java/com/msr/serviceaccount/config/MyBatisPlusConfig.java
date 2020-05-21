@@ -12,7 +12,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @Configuration
 @EnableTransactionManagement
-@MapperScan("com.msr.serviceaccount.mapper")
+// @MapperScan("com.msr.serviceaccount.service")
 public class MyBatisPlusConfig {
     /**
      * SQL 执行性能分析插件

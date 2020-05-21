@@ -1,9 +1,17 @@
 package com.msr.serviceaccount.controller;
 
+import com.alibaba.excel.EasyExcel;
+import com.msr.common.msrUtil.R;
+import com.msr.serviceaccount.entity.excel.IncomeExcelEntity;
+import com.msr.serviceaccount.service.IncomeExcelService;
 import io.swagger.annotations.Api;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.ApiParam;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+
+import javax.servlet.http.HttpServletResponse;
+import java.util.List;
 
 /**
  * <p>
@@ -18,5 +26,19 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/hotel/income/excel")
 public class IncomeExcelController {
-
+    @Autowired
+    private IncomeExcelService incomeExcelService;
+    // 导出
+    @ApiOperation(value = "根据客户ID导出对应收入报表信息")
+    @GetMapping("/exportIncomes/{cutomerId}")
+    public R exportByCustomerId(HttpServletResponse response,
+                                @ApiParam(name = "cutomerId", value = "客户ID", required = true)
+                                @PathVariable String cutomerId
+    ){
+        List<IncomeExcelEntity> incomeList = incomeExcelService.getIncomes(cutomerId);
+        System.out.println(incomeList); // 拿到数据
+        String fileName = "F:\\" + cutomerId + ".xlsx";
+        EasyExcel.write(fileName, IncomeExcelEntity.class).sheet("写入方法一").doWrite(incomeList);
+        return R.ok();
+    }
 }

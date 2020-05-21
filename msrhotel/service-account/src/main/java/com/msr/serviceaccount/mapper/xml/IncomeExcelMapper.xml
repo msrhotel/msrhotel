@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.msr.serviceaccount.mapper.IncomeExcelMapper">
-
+    <insert id="insertIncomeData" parameterType="com.msr.serviceaccount.entity.excel.IncomeExcelEntity">
+        insert into hotel_income values(#{customerId} , #{incomeId} , #{incomeAmount}, #{incomeSatff}, #{incomeTypeId}, #{incomeDate}, #{incomeInfo})
+    </insert>
+    <select id="getIncomes" resultType="com.msr.serviceaccount.entity.excel.IncomeExcelEntity">
+        select * from hotel_income where customer_id = #{customerId}
+    </select>
 </mapper>

@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.msr.serviceaccount.mapper.ConsumeExcelMapper">
         <insert id="insertConsumeData" parameterType="com.msr.serviceaccount.entity.excel.ConsumeExcelEntity">
-        insert into person values(#{customerId} , #{consumeId} , #{consumeAmount}, #{consumeSatff}, #{consumeTypeId}, #{consumeDate}, #{consumeInfo})
+        insert into hotel_consume values(#{customerId} , #{consumeId} , #{consumeAmount}, #{consumeSatff}, #{consumeTypeId}, #{consumeDate}, #{consumeInfo})
     </insert>
         <select id="getConsumes" resultType="com.msr.serviceaccount.entity.excel.ConsumeExcelEntity">
         select * from hotel_consume where customer_id = #{customerId}

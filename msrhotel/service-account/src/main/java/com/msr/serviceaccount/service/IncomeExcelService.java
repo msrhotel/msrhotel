@@ -3,6 +3,8 @@ package com.msr.serviceaccount.service;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.msr.serviceaccount.entity.excel.IncomeExcelEntity;
 
+import java.util.List;
+
 /**
  * <p>
  *  服务类
@@ -13,4 +15,5 @@ import com.msr.serviceaccount.entity.excel.IncomeExcelEntity;
  */
 
 public interface IncomeExcelService extends IService<IncomeExcelEntity> {
+    List<IncomeExcelEntity> getIncomes(String customerId);
 }

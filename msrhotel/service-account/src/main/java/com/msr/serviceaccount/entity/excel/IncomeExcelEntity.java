@@ -2,6 +2,8 @@ package com.msr.serviceaccount.entity.excel;
 
 import cn.afterturn.easypoi.excel.annotation.Excel;
 import com.alibaba.excel.annotation.ExcelProperty;
+import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableId;
 import io.swagger.annotations.ApiModel;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -22,22 +24,23 @@ public class IncomeExcelEntity {
     @ExcelProperty("客户ID")
     private String customerId;
 
-    @ExcelProperty("客户ID")
+    @ExcelProperty("收入账务ID")
+    @TableId(value = "consume_id", type = IdType.ID_WORKER_STR)
     private String incomeId;
 
-    @ExcelProperty("客户ID")
+    @ExcelProperty("收入金额")
     private Integer incomeAmount;
 
-    @ExcelProperty("客户ID")
+    @ExcelProperty("操作人员")
     private String incomeSatff;
 
-    @ExcelProperty("客户ID")
+    @ExcelProperty("收入类型")
     private Integer incomeTypeId;
 
-    @ExcelProperty("客户ID")
+    @ExcelProperty("收入日期")
     private Date incomeDate;
 
-    @ExcelProperty("客户ID")
+    @ExcelProperty("备注")
     private String incomeInfo;
 
 }

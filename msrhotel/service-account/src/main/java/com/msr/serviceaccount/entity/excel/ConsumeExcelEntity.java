@@ -2,6 +2,8 @@ package com.msr.serviceaccount.entity.excel;
 
 import cn.afterturn.easypoi.excel.annotation.Excel;
 import com.alibaba.excel.annotation.ExcelProperty;
+import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableId;
 import io.swagger.annotations.ApiModel;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -19,31 +21,32 @@ import java.util.Date;
 public class ConsumeExcelEntity {
     private static final long serialVersionUID = 1L;
 
-    @ExcelProperty("客户ID")
+    @ExcelProperty(value = "客户ID",index = 0)
 //    @Excel(name = "客户ID", width = 30 , needMerge = true)
     private String customerId;
 
-    @ExcelProperty("消费账务ID")
+    @TableId(value = "consume_id", type = IdType.ID_WORKER_STR)
+    @ExcelProperty(value ="消费账务ID",index = 1)
 //    @Excel(name = "消费账务ID", width = 30 , needMerge = true)
     private String consumeId;
 
-    @ExcelProperty("消费金额")
+    @ExcelProperty(value ="消费金额",index = 2)
 //    @Excel(name = "消费金额", width = 30 , needMerge = true)
     private Integer consumeAmount;
 
-    @ExcelProperty("操作人员")
+    @ExcelProperty(value ="操作人员",index = 3)
 //    @Excel(name = "操作人员", width = 30 , needMerge = true)
     private String consumeSatff;
 
-    @ExcelProperty("消费类型ID")
+    @ExcelProperty(value ="消费类型ID",index = 4)
 //    @Excel(name = "消费类型ID", width = 30 , needMerge = true)
     private Integer consumeTypeId;
 
-    @ExcelProperty("消费日期")
+    @ExcelProperty(value ="消费日期",index = 5)
 //    @Excel(name = "消费日期", width = 30 , needMerge = true, format = "yyyy-MM-dd")
     private Date consumeDate;
 
-    @ExcelProperty("备注")
+    @ExcelProperty(value ="备注",index = 6)
 //    @Excel(name = "备注", width = 30 , needMerge = true)
     private String consumeInfo;
 

@@ -22,6 +22,6 @@ import java.util.List;
 @Repository
 public interface ConsumeExcelMapper extends BaseMapper<ConsumeExcelEntity> {
     List<ConsumeExcelEntity> getConsumes(String customerId);
-    void insertConsumeData(ConsumeExcelEntity consumes);
+//    void insertConsumeData(ConsumeExcelEntity consumes);
 
 }
