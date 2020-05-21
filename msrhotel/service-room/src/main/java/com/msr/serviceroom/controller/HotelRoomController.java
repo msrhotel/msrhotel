@@ -39,7 +39,7 @@ public class HotelRoomController {
     @GetMapping("list")
     public R list(){
         List<HotelRoom> list = hotelRoomService.list(null);
-        return R.ok().data("item", list);
+        return R.ok().data("list", list);
     }
 
     @ApiOperation(value = "根据ID删除客房信息")
