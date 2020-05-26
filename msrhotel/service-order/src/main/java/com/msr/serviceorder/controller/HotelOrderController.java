@@ -25,13 +25,13 @@ import java.util.List;
 @Api(description = "预订订单列表")
 @CrossOrigin
 @RestController
-@RequestMapping("/serviceorder/hotel-order")
+@RequestMapping("/serviceorder/order")
 public class HotelOrderController {
     @Autowired
     private HotelOrderService hotelOrderService;
 
     @ApiOperation(value = "所有订单信息列表")
-    @GetMapping("list")
+    @GetMapping("/list")
     public R list(){
         List<HotelOrder> list = hotelOrderService.list(null);
         return R.ok().data("hotelOrders", list);
@@ -92,15 +92,15 @@ public class HotelOrderController {
     }
 
     @ApiOperation(value = "根据ID修改订单信息")
-    @PutMapping("{id}")
+    @PostMapping ("{id}")
     public R updateById(
-            @ApiParam(name = "id", value = "订单ID", required = true)
-            @PathVariable String id,
+            //@ApiParam(name = "id", value = "订单ID", required = true)
+            //@PathVariable String id,
 
             @ApiParam(name = "hotelOrder", value = "订单信息对象", required = true)
             @RequestBody HotelOrder hotelOrder){
 
-        hotelOrder.setOrderId(id);
+        //hotelOrder.setOrderId(id);
         hotelOrderService.updateById(hotelOrder);
         return R.ok();
     }

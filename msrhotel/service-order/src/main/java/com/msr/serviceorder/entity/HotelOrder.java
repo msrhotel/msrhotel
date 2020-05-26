@@ -2,6 +2,7 @@ package com.msr.serviceorder.entity;
 
 import com.baomidou.mybatisplus.annotation.*;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 import java.io.Serializable;
@@ -41,10 +42,10 @@ public class HotelOrder implements Serializable {
     private Integer orderType;
 
     @ApiModelProperty(value = "预订的入住日期")
-    private Date inDate;
+    private LocalDate inDate;
 
     @ApiModelProperty(value = "预订的退房日期")
-    private Date outDate;
+    private LocalDate outDate;
 
     @ApiModelProperty(value = "备注")
     private String orderInfo;
