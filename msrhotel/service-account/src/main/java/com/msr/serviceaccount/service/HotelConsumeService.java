@@ -21,5 +21,7 @@ public interface HotelConsumeService extends IService<HotelConsume> {
     void pageQuery(Page<HotelConsume> pageParam, ConsumeQuery consumeQuery);
 
     void getByCustomerId(Page<HotelConsume> pageParam, CustomerIdQuery customerIdQuery);
+
+    List<HotelConsume> getByCustomerId(String customerId);
     //  List<HotelConsume> getByCustomerId(String customerId);
 }

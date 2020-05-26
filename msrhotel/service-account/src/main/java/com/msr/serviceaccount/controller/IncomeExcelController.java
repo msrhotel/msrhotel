@@ -11,6 +11,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletResponse;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -24,7 +26,7 @@ import java.util.List;
 @CrossOrigin // 跨域
 @Api(description = "收入报表导入导出")
 @RestController
-@RequestMapping("/hotel/income/excel")
+@RequestMapping("/serviceaccount/income/excel")
 public class IncomeExcelController {
     @Autowired
     private IncomeExcelService incomeExcelService;
@@ -36,8 +38,11 @@ public class IncomeExcelController {
                                 @PathVariable String cutomerId
     ){
         List<IncomeExcelEntity> incomeList = incomeExcelService.getIncomes(cutomerId);
-        System.out.println(incomeList); // 拿到数据
-        String fileName = "F:\\" + cutomerId + ".xlsx";
+
+//        System.out.println(incomeList); // 拿到数据
+        SimpleDateFormat tempDate = new SimpleDateFormat("yyyyMMddHHmmss");
+        String datetime = tempDate.format(new java.util.Date());
+        String fileName = "F:\\account\\income\\" + datetime +  ".xlsx";
         EasyExcel.write(fileName, IncomeExcelEntity.class).sheet("写入方法一").doWrite(incomeList);
         return R.ok();
     }

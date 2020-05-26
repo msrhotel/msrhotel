@@ -12,17 +12,18 @@ import java.util.Map;
 
 public class ConsumeExcelListener extends AnalysisEventListener<ConsumeExcelEntity> {
     public ConsumeExcelService consumeExcelService;
-    public ConsumeExcelListener() {}
+//    public ConsumeExcelListener() {}
     public ConsumeExcelListener(ConsumeExcelService consumeExcelService) {
         this.consumeExcelService = consumeExcelService;
     }
-//   List<ConsumeExcelEntity> consumeList = new ArrayList<>();
+   List<ConsumeExcelEntity> consumeList = new ArrayList<>();
     @Override
     public void invoke(ConsumeExcelEntity consumeExcelEntity, AnalysisContext analysisContext) {
         if(consumeExcelEntity == null) {
             throw new MSRException(20001,"文件数据为空");
         }
-//        consumeList.add(consumeExcelEntity);
+        consumeList.add(consumeExcelEntity);
+        System.out.println(consumeList);
 
     }
     //读取excel表头信息

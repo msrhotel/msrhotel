@@ -4,6 +4,7 @@ import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.msr.serviceaccount.entity.HotelConsume;
 import com.msr.serviceaccount.entity.HotelIncome;
+import com.msr.serviceaccount.mapper.HotelConsumeMapper;
 import com.msr.serviceaccount.mapper.HotelIncomeMapper;
 import com.msr.serviceaccount.query.IncomeCustomerIdQuery;
 import com.msr.serviceaccount.query.IncomeQuery;
@@ -13,6 +14,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 
 import java.util.Date;
+import java.util.List;
 
 /**
  * <p>
@@ -24,7 +26,7 @@ import java.util.Date;
  */
 @Service
 public class HotelIncomeServiceImpl extends ServiceImpl<HotelIncomeMapper, HotelIncome> implements HotelIncomeService {
-
+    private HotelIncomeMapper incomeMapper;
     @Override
     public void getIncomeByCustomerId(Page<HotelIncome> pageParam, IncomeCustomerIdQuery incomeCustomerIdQuery) {
         QueryWrapper<HotelIncome> queryWrapper = new QueryWrapper<>();
@@ -44,12 +46,18 @@ public class HotelIncomeServiceImpl extends ServiceImpl<HotelIncomeMapper, Hotel
         QueryWrapper<HotelIncome> queryWrapper = new QueryWrapper<>();
         queryWrapper.orderByAsc();
 
+        String incomeId = incomeQuery.getIncomeId();
         String customerId = incomeQuery.getCustomerId();
         Integer incomeTypeId = incomeQuery.getIncomeTypeId();
         String incomeSatff = incomeQuery.getIncomeSatff();
         Date incomeDate = incomeQuery.getIncomeDate();
         String begin = incomeQuery.getBegin();
         String end = incomeQuery.getEnd();
+
+
+        if (!StringUtils.isEmpty(incomeId)) {
+            queryWrapper.eq("income_id", incomeId);
+        }
 
         if (!StringUtils.isEmpty(customerId)) {
             queryWrapper.eq("customer_id", customerId);
@@ -74,5 +82,10 @@ public class HotelIncomeServiceImpl extends ServiceImpl<HotelIncomeMapper, Hotel
         }
 
         baseMapper.selectPage(pageParam, queryWrapper);
+    }
+
+    @Override
+    public List<HotelConsume> getByCustomerId(String customerId) {
+        return incomeMapper.getByCustomerId(customerId);
     }
 }

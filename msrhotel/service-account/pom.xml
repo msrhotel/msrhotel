@@ -72,21 +72,21 @@
 <!--            <artifactId>poi-ooxml</artifactId>-->
 <!--        </dependency>-->
 
-<!--        <dependency>-->
-<!--            <groupId>commons-fileupload</groupId>-->
-<!--            <artifactId>commons-fileupload</artifactId>-->
-<!--        </dependency>-->
+        <dependency>
+            <groupId>commons-fileupload</groupId>
+            <artifactId>commons-fileupload</artifactId>
+        </dependency>
 
         <!--httpclient-->
-<!--        <dependency>-->
-<!--            <groupId>org.apache.httpcomponents</groupId>-->
-<!--            <artifactId>httpclient</artifactId>-->
-<!--        </dependency>-->
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+        </dependency>
         <!--commons-io-->
-<!--        <dependency>-->
-<!--            <groupId>commons-io</groupId>-->
-<!--            <artifactId>commons-io</artifactId>-->
-<!--        </dependency>-->
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+        </dependency>
         <!--gson-->
         <dependency>
             <groupId>com.google.code.gson</groupId>
@@ -162,6 +162,17 @@
 <!--            <artifactId>log4j</artifactId>-->
 <!--            <version>2.13.1</version>-->
 <!--        </dependency>-->
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi</artifactId>
+            <version>4.0.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml</artifactId>
+            <version>4.0.1</version>
+        </dependency>
     </dependencies>
 
     <!-- 项目打包时会将java目录中的*.xml文件也进行打包 -->
@@ -199,6 +210,9 @@
                 <filtering>false</filtering>
             </resource>
         </resources>
+
+
     </build>
+
 
 </project>

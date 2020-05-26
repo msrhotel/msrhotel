@@ -13,7 +13,7 @@ import org.springframework.web.multipart.MultipartFile;
 import java.io.InputStream;
 import java.util.List;
 
-@Service()
+@Service
 // @Configuration
 public class ConsumeExcelServiceImpl extends ServiceImpl<ConsumeExcelMapper, ConsumeExcelEntity> implements ConsumeExcelService {
 
@@ -25,8 +25,16 @@ public class ConsumeExcelServiceImpl extends ServiceImpl<ConsumeExcelMapper, Con
         return consumeList;
     }
 
+    @Override
+    public void importConsumeData(List<ConsumeExcelEntity> consumeList) {
+        for (ConsumeExcelEntity consumeExcelEntity : consumeList) {
+            consumeExcelMapper.importConsumeData(consumeExcelEntity);
+            System.out.println("数据 【" + consumeExcelEntity.getCustomerId() + "】插入成功！");
+        }
+    }
+
 //    @Override
-//    public void insertConsumeData(MultipartFile file, ConsumeExcelService consumeExcelService) {
+//    public void importConsumeData(MultipartFile file, ConsumeExcelService consumeExcelService) {
 //        try {
 //            //文件输入流
 //            InputStream in = file.getInputStream();
@@ -35,7 +43,10 @@ public class ConsumeExcelServiceImpl extends ServiceImpl<ConsumeExcelMapper, Con
 //        }catch(Exception e){
 //            e.printStackTrace();
 //        }
+//
 //    }
+
+
 
 //    }
 

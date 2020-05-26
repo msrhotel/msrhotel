@@ -10,13 +10,17 @@ import java.util.Date;
 public class ConsumeQuery {
     private static final long serialVersionUID = 1L;
 
+    @ApiModelProperty(value = "消费账务ID，主键")
+    @TableId(value = "consume_id", type = IdType.ID_WORKER_STR)
+    private String consumeId;
+
     @ApiModelProperty(value = "对应用户id")
     private String customerId;
 
     @ApiModelProperty(value = "账务消费类型")
     private Integer consumeTypeId;
 
-    @ApiModelProperty(value = "账务消费日期")
+    @ApiModelProperty(value = "账务消费日期",example ="2019-01-01 10:10:10")
     private Date consumeDate;
 
 

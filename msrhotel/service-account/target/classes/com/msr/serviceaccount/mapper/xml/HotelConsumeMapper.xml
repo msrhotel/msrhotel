@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.msr.serviceaccount.mapper.HotelConsumeMapper">
-
-</mapper>
+    <mapper namespace="com.msr.serviceaccount.mapper.HotelConsumeMapper">
+<!--        <insert id="importConsumeData" parameterType="com.msr.serviceaccount.entity.excel.ConsumeExcelEntity">-->
+<!--        insert into hotel_consume values( #{consumeId} ,#{consumeTypeId},  #{consumeDate},#{consumeAmount}, #{consumeSatff},  #{consumeInfo},#{customerId} ,#{isDeleted},#{gmtCreate},#{gmtModified})-->
+<!--    </insert>-->
+<!--        <select id="getByCustomerId" resultType="com.msr.serviceaccount.entity.HotelConsume">-->
+<!--        select * from hotel_consume where customer_id = #{customerId}-->
+<!--    </select>-->
+    </mapper>

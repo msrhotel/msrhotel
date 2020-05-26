@@ -3,11 +3,13 @@ package com.msr.serviceaccount.service.impl;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.msr.serviceaccount.entity.HotelConsume;
+import com.msr.serviceaccount.mapper.ConsumeExcelMapper;
 import com.msr.serviceaccount.mapper.HotelConsumeMapper;
 import com.msr.serviceaccount.query.ConsumeQuery;
 import com.msr.serviceaccount.query.CustomerIdQuery;
 import com.msr.serviceaccount.service.HotelConsumeService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 
@@ -25,12 +27,12 @@ import java.util.List;
 @Service
 public class HotelConsumeServiceImpl extends ServiceImpl<HotelConsumeMapper, HotelConsume> implements HotelConsumeService {
 
-
+    private HotelConsumeMapper consumeMapper;
     @Override
     public void pageQuery(Page<HotelConsume> pageParam, ConsumeQuery consumeQuery) {
         QueryWrapper<HotelConsume> queryWrapper = new QueryWrapper<>();
         queryWrapper.orderByAsc();
-
+        String consumeId = consumeQuery.getConsumeId();
         String customerId = consumeQuery.getCustomerId();
         Integer consumeTypeId = consumeQuery.getConsumeTypeId();
         String consumeSatff = consumeQuery.getConsumeSatff();
@@ -38,8 +40,11 @@ public class HotelConsumeServiceImpl extends ServiceImpl<HotelConsumeMapper, Hot
         String begin = consumeQuery.getBegin();
         String end = consumeQuery.getEnd();
 
+        if (!StringUtils.isEmpty(consumeId)) {
+            queryWrapper.like("consume_id", consumeId);
+        }
         if (!StringUtils.isEmpty(customerId)) {
-            queryWrapper.eq("customer_id", customerId);
+            queryWrapper.like("customer_id", customerId);
         }
 
         if (!StringUtils.isEmpty(consumeTypeId) ) {
@@ -76,5 +81,11 @@ public class HotelConsumeServiceImpl extends ServiceImpl<HotelConsumeMapper, Hot
         }
         baseMapper.selectPage(pageParam, queryWrapper);
     }
+
+    @Override
+    public List<HotelConsume> getByCustomerId(String customerId) {
+        return consumeMapper.getByCustomerId(customerId);
+    }
+
 
 }

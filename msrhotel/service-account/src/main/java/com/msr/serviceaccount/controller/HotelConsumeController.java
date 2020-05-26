@@ -16,6 +16,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.security.PrivateKey;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -27,9 +28,9 @@ import java.util.List;
  * @since 2020-05-18
  */
 @CrossOrigin // 跨域
-@Api(description = "消费报表")
+@Api(description = "消费报表信息管理")
 @RestController
-@RequestMapping("/hotel/consume")
+@RequestMapping("/serviceaccount/consume")
 public class HotelConsumeController {
     @Autowired
     private HotelConsumeService consumeService;
@@ -41,13 +42,7 @@ public class HotelConsumeController {
         List<HotelConsume> list = consumeService.list(null);
         return R.ok().data("consumes",list);
     }
-//    @ApiOperation(value = "所有客人入住信息列表")
-//    @GetMapping("list")
-//    public R list(){
-//        List<Customer> list = customerService.list(null);
-//        return R.ok().data("cutomers", list);
-//    }
-//
+
     @ApiOperation(value = "新增消费报表")
     @PostMapping("save")
     public R save(
@@ -59,61 +54,71 @@ public class HotelConsumeController {
     }
 
     @ApiOperation(value = "根据账单ID删除收入消费报表")
-    @DeleteMapping("{id}")
+    @DeleteMapping("delete/{consumeId}")
     public R removeById(
-            @ApiParam(name = "id", value = "账户ID", required = true)
-            @PathVariable String id){
-        consumeService.removeById(id);
+            @ApiParam(name = "consumeId", value = "账户ID", required = true)
+            @PathVariable String consumeId){
+        consumeService.removeById(consumeId);
         return R.ok();
     }
 
     @ApiOperation(value = "根据账务ID修改消费报表")
-    @PutMapping("{id}")
+    @PostMapping("update")
     public R updateById(
-            @ApiParam(name = "id", value = "账务ID", required = true)
-            @PathVariable String id,
+//            @ApiParam(name = "consumeId", value = "账务ID", required = true)
+//            @PathVariable String consumeId,
 
             @ApiParam(name = "consume", value = "账务信息对象", required = true)
             @RequestBody HotelConsume consume) {
 
-        consume.setConsumeId(id);
+//        consume.setConsumeId(consumeId);
         consumeService.updateById(consume);
         return R.ok();
     }
 
     @ApiOperation(value = "根据账务ID查询消费报表")
-    @GetMapping("{id}")
+    @GetMapping("{consumeId}")
     public R getById(
-            @ApiParam(name = "id", value = "账务ID", required = true)
-            @PathVariable String id){
+            @ApiParam(name = "consumeId", value = "账务ID", required = true)
+            @PathVariable String consumeId){
 
-        HotelConsume consume = consumeService.getById(id);
-        return R.ok().data("items", consume);
+        HotelConsume consume = consumeService.getById(consumeId);
+        return R.ok().data("item", consume);
     }
-
-    @ApiOperation(value = "根据客户ID查询消费报表分页列表")
-    @GetMapping("{page}/{limit}")
+    @ApiOperation(value = "根据客户ID查询消费报表")
+    @GetMapping("customer/{customerId}")
     public R getByCustomerId(
-            @ApiParam(name = "page", value = "当前页码", required = true)
-            @PathVariable Long page,
+            @ApiParam(name = "customerId", value = "客户ID", required = true)
+            @PathVariable String customerId){
 
-            @ApiParam(name = "limit", value = "每页记录数", required = true)
-            @PathVariable Long limit,
-
-            @ApiParam(name = "customerIdQuery", value = "查询对象", required = false)
-                    CustomerIdQuery customerIdQuery){
-
-        Page<HotelConsume> pageParam = new Page<>(page, limit);
-
-        consumeService.getByCustomerId(pageParam,customerIdQuery);
-        List<HotelConsume> records = pageParam.getRecords();
-        long total = pageParam.getTotal();
-
-        return  R.ok().data("total", total).data("rows", records);
+        List<HotelConsume> list = consumeService.getByCustomerId(customerId);
+        System.out.println(list);
+        return R.ok().data("item", list);
     }
+
+//    @ApiOperation(value = "根据客户ID查询消费报表分页列表")
+//    @GetMapping("{page}/{limit}")
+//    public R getByCustomerId(
+//            @ApiParam(name = "page", value = "当前页码", required = true)
+//            @PathVariable Long page,
+//
+//            @ApiParam(name = "limit", value = "每页记录数", required = true)
+//            @PathVariable Long limit,
+//
+//            @ApiParam(name = "customerIdQuery", value = "查询对象", required = false)
+//                    CustomerIdQuery customerIdQuery){
+//
+//        Page<HotelConsume> pageParam = new Page<>(page, limit);
+//
+//        consumeService.getByCustomerId(pageParam,customerIdQuery);
+//        List<HotelConsume> records = pageParam.getRecords();
+//        long total = pageParam.getTotal();
+//
+//        return  R.ok().data("total", total).data("rows", records);
+//    }
 
     @ApiOperation(value = "消费报表分页列表")
-    @GetMapping("page/{page}/{limit}")
+    @GetMapping("{page}/{limit}")
     public R pageQuery(
             @ApiParam(name = "page", value = "当前页码", required = true)
             @PathVariable Long page,

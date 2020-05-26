@@ -36,14 +36,15 @@ public class HotelConsume implements Serializable {
     @ApiModelProperty(value = "账务消费类型")
     private Integer consumeTypeId;
 
-    @ApiModelProperty(value = "账务消费日期")
+    @ApiModelProperty(value = "账务消费日期",example ="2019-01-01 10:10:10")
+    @TableField(fill = FieldFill.INSERT)
     private Date consumeDate;
 
     @ApiModelProperty(value = "账务金额")
     private Integer consumeAmount;
 
     @ApiModelProperty(value = "账务操作员")
-    private String consumeSatff;
+    private String consumeStaff;
 
     @ApiModelProperty(value = "备注")
     private String consumeInfo;
@@ -55,12 +56,12 @@ public class HotelConsume implements Serializable {
     @TableLogic
     private Boolean isDeleted;
 
-    @ApiModelProperty(value = "创建时间")
+    @ApiModelProperty(value = "创建时间",example ="2019-01-01 10:10:10")
     @TableField(fill = FieldFill.INSERT)
     // @JsonFormat( pattern="yyyy-MM-dd HH:mm:ss")
     private Date gmtCreate;
 
-    @ApiModelProperty(value = "更新时间") // ,example = "2019-01-01 8:00:00 "
+    @ApiModelProperty(value = "更新时间",example ="2019-01-01 10:10:10") // ,example = "2019-01-01 8:00:00 "
     // @JsonFormat( pattern="yyyy-MM-dd HH:mm:ss")
     @TableField(fill = FieldFill.INSERT_UPDATE)
     private Date gmtModified;

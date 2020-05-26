@@ -35,14 +35,15 @@ public class HotelIncome implements Serializable {
     @ApiModelProperty(value = "账务收入类型")
     private Integer incomeTypeId;
 
-    @ApiModelProperty(value = "账务收入日期")
+    @ApiModelProperty(value = "账务收入日期",example ="2019-01-01 10:10:10")
+    @TableField(fill = FieldFill.INSERT)
     private Date incomeDate;
 
     @ApiModelProperty(value = "账务收入金额")
     private Integer incomeAmount;
 
     @ApiModelProperty(value = "账务操作员")
-    private String incomeSatff;
+    private String incomeStaff;
 
     @ApiModelProperty(value = "备注")
     private String incomeInfo;
@@ -54,11 +55,11 @@ public class HotelIncome implements Serializable {
     @TableLogic
     private Boolean isDeleted;
 
-    @ApiModelProperty(value = "创建时间")
+    @ApiModelProperty(value = "创建时间",example ="2019-01-01 10:10:10" )
     @TableField(fill = FieldFill.INSERT)
     private Date gmtCreate;
 
-    @ApiModelProperty(value = "更新时间")
+    @ApiModelProperty(value = "更新时间",example ="2019-01-01 10:10:10")
     @TableField(fill = FieldFill.INSERT_UPDATE)
     private Date gmtModified;
 
