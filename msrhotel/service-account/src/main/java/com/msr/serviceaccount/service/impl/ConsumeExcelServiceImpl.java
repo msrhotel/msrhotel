@@ -24,14 +24,14 @@ public class ConsumeExcelServiceImpl extends ServiceImpl<ConsumeExcelMapper, Con
         List<ConsumeExcelEntity> consumeList = consumeExcelMapper.getConsumes(customerId);
         return consumeList;
     }
-
-    @Override
-    public void importConsumeData(List<ConsumeExcelEntity> consumeList) {
-        for (ConsumeExcelEntity consumeExcelEntity : consumeList) {
-            consumeExcelMapper.importConsumeData(consumeExcelEntity);
-            System.out.println("数据 【" + consumeExcelEntity.getCustomerId() + "】插入成功！");
-        }
-    }
+//
+//    @Override
+//    public void importConsumeData(List<ConsumeExcelEntity> consumeList) {
+//        for (ConsumeExcelEntity consumeExcelEntity : consumeList) {
+//            consumeExcelMapper.importConsumeData(consumeExcelEntity);
+//            System.out.println("数据 【" + consumeExcelEntity.getCustomerId() + "】插入成功！");
+//        }
+//    }
 
 //    @Override
 //    public void importConsumeData(MultipartFile file, ConsumeExcelService consumeExcelService) {

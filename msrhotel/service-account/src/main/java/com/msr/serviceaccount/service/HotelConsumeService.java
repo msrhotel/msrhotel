@@ -5,6 +5,7 @@ import com.msr.serviceaccount.entity.HotelConsume;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.msr.serviceaccount.query.ConsumeQuery;
 import com.msr.serviceaccount.query.CustomerIdQuery;
+import org.springframework.web.multipart.MultipartFile;
 
 import java.util.List;
 
@@ -23,5 +24,10 @@ public interface HotelConsumeService extends IService<HotelConsume> {
     void getByCustomerId(Page<HotelConsume> pageParam, CustomerIdQuery customerIdQuery);
 
     List<HotelConsume> getByCustomerId(String customerId);
+    void importConsumeData(MultipartFile file, HotelConsumeService consumeService);
+
+    boolean saveData(List<HotelConsume> consume);
+
+//    void importConsumeData(List<HotelConsume> consumeList);
     //  List<HotelConsume> getByCustomerId(String customerId);
 }

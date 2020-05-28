@@ -17,7 +17,7 @@ import java.util.List;
 
 public interface ConsumeExcelService extends IService<ConsumeExcelEntity> {
     List<ConsumeExcelEntity> getConsumes(String customerId);
-    void importConsumeData(List<ConsumeExcelEntity> consumeList);
+//    void importConsumeData(List<ConsumeExcelEntity> consumeList);
 //    void importConsumeData(MultipartFile file, ConsumeExcelService consumeExcelService);
 
 }

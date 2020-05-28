@@ -1,10 +1,12 @@
 package com.msr.serviceaccount.controller;
 
 
+import com.alibaba.excel.EasyExcel;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.msr.common.msrUtil.R;
 import com.msr.serviceaccount.entity.HotelConsume;
 import com.msr.serviceaccount.entity.HotelIncome;
+import com.msr.serviceaccount.entity.excel.ConsumeExcelEntity;
 import com.msr.serviceaccount.mapper.HotelConsumeMapper;
 import com.msr.serviceaccount.query.IncomeCustomerIdQuery;
 import com.msr.serviceaccount.query.IncomeQuery;
@@ -15,6 +17,8 @@ import io.swagger.annotations.ApiParam;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpServletResponse;
+import java.text.SimpleDateFormat;
 import java.util.List;
 
 /**
@@ -34,11 +38,15 @@ public class HotelIncomeController {
     @Autowired
     private HotelIncomeService incomeService;
 
-    @ApiOperation("所有收入报表信息")
-    @GetMapping("findAll")
-    public R list(){
+    @ApiOperation("批量导出所有收入信息")
+    @GetMapping("exportAll")
+    public R list(HttpServletResponse response){
         List<HotelIncome> list = incomeService.list(null);
-        return R.ok().data("incomes",list);
+        SimpleDateFormat tempDate = new SimpleDateFormat("yyyyMMddHHmmss");
+        String datetime = tempDate.format(new java.util.Date());
+        String fileName = "F:\\account\\income\\"+ "收入报表_" + datetime +".xlsx";
+        EasyExcel.write(fileName, HotelIncome.class).sheet("写入方法一").doWrite(list);
+        return R.ok();
     }
 
     @ApiOperation(value = "新增收入报表信息")
