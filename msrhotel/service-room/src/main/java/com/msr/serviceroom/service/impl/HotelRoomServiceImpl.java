@@ -33,7 +33,7 @@ public class HotelRoomServiceImpl extends ServiceImpl<HotelRoomMapper, HotelRoom
         }
 
         String roomPrice = roomQuery.getRoomPrice();
-        Integer roomType = roomQuery.getRoomType();
+        String roomType = roomQuery.getRoomType();
         String roomState=roomQuery.getRoomState();
         String begin = roomQuery.getBegin();
         String end = roomQuery.getEnd();

@@ -27,7 +27,7 @@ public class HotelRoomtype implements Serializable {
 
     @ApiModelProperty(value = "主键")
     @TableId(value = "id", type = IdType.ID_WORKER_STR)
-    private Integer id;
+    private String id;
 
     @ApiModelProperty(value = "房间类型")
     private String roomType;

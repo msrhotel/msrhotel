@@ -17,7 +17,7 @@ public class RoomQuery {
     private static final long serialVersionUID = 1L;
 
     @ApiModelProperty(value = "房间类型")
-    private Integer roomType;
+    private String roomType;
 
     @ApiModelProperty(value = "价格")
     private String roomPrice;

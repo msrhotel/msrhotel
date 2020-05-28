@@ -33,7 +33,7 @@ public class HotelRoom implements Serializable {
     private String roomNum;
 
     @ApiModelProperty(value = "房间类型")
-    private Integer roomType;
+    private String roomType;
 
     @ApiModelProperty(value = "价格")
     private String roomPrice;
@@ -42,7 +42,7 @@ public class HotelRoom implements Serializable {
     private String roomState;
 
     @ApiModelProperty(value = "备注")
-    private Date info;
+    private String info;
 
     @ApiModelProperty(value = "逻辑删除 1（true）已删除， 0（false）未删除")
     @TableLogic
