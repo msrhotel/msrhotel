@@ -3,6 +3,8 @@ package com.msr.serviceorder.controller;
 
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.msr.common.msrUtil.R;
+import com.msr.servicecustomerinfo.entity.HotelCustomerinfo;
+import com.msr.servicecustomerinfo.service.HotelCustomerinfoService;
 import com.msr.serviceorder.entity.HotelOrder;
 import com.msr.serviceorder.query.HotelOrderQuery;
 import com.msr.serviceorder.service.HotelOrderService;
@@ -36,6 +38,8 @@ public class HotelOrderController {
         List<HotelOrder> list = hotelOrderService.list(null);
         return R.ok().data("hotelOrders", list);
     }
+
+
 
     @ApiOperation(value = "根据ID删除订单信息")
     @DeleteMapping("{id}")
