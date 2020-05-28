@@ -96,15 +96,15 @@ public class HotelRoomController {
     }
 
     @ApiOperation(value = "根据ID修改客房信息")
-    @PutMapping("{id}")
+    @PostMapping("update")
     public R updateById(
-            @ApiParam(name = "id", value = "客户ID", required = true)
-            @PathVariable String id,
+//            @ApiParam(name = "id", value = "客户ID", required = true)
+//            @PathVariable String id,
 
             @ApiParam(name = "room", value = "客户入住信息对象", required = true)
             @RequestBody HotelRoom room){
 
-        room.setRoomNum(id);
+//        room.setRoomNum(id);
         hotelRoomService.updateById(room);
         return R.ok();
     }
